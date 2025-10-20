@@ -35,7 +35,7 @@ Detected swear words are replaced with a bleep sound, creating a clean, censored
 ├── bleep.mp3                          # Bleep sound file
 ├── sample_video.mp4                   # Example input video
 ├── AI-Video-Censorship.ipynb          # Jupyter Notebook
-├── sample_video_censored              # Example output video
+├── sample_video_censored.mp4          # Example output video
 └── README.md                          # Documentation
 ```
 
@@ -68,7 +68,7 @@ ffmpeg -version
 This project uses the [**Profanities in English – collection**](https://www.kaggle.com/datasets/konradb/profanities-in-english-collection/versions/1) dataset from Kaggle.
 
 Download and extract the dataset, then place the CSV file in the project directory as `profanity.csv`.  
-The notebook will automatically normalize and categorize the words into:
+The notebook will automatically normalise and categorise the words into:
 
 - `low_swear_words`
 - `mid_swear_words`
@@ -81,7 +81,7 @@ The notebook will automatically normalize and categorize the words into:
 Open **AI-Video-Censorship.ipynb** and adjust the configuration cell:
 
 ```python
-video_path = "SampleVideo.mp4"     # Input video
+video_path = "sample_video.mp4"     # Input video
 bleep_path = "bleep.mp3"           # Bleep sound file
 model_size = "small"               # Whisper model size (tiny, base, small, medium, large)
 swear_words = low_swear_words      # Choose severity level
@@ -109,7 +109,7 @@ Then run the notebook cell-by-cell or execute all cells to process and censor yo
 ## How It Works
 
 1. **Transcription** – Whisper transcribes the video audio with timestamps and confidence levels.
-2. **Detection** – Words are normalized (lowercased and stripped of punctuation) and compared to the selected profanity list.
+2. **Detection** – Words are normalised (lowercased and stripped of punctuation) and compared to the selected profanity list.
 3. **Audio Filtering** – FFmpeg mutes sections containing profanities and overlays a bleep sound.
 4. **Iterative Passes** – The process repeats until no further profanities are detected or the maximum pass count is reached.
 
@@ -127,4 +127,4 @@ Then run the notebook cell-by-cell or execute all cells to process and censor yo
 ## License
 
 This project is released under the **MIT License**.  
-You are free to use, modify, and distribute it with proper attribution.
+You are more than welcome to use, modify, and distribute it with proper attribution.
