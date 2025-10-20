@@ -33,8 +33,9 @@ Detected swear words are replaced with a bleep sound, creating a clean, censored
 │
 ├── profanity.csv                      # Profanity list (from Kaggle dataset)
 ├── bleep.mp3                          # Bleep sound file
-├── sample_video.mp4                    # Example input video
+├── sample_video.mp4                   # Example input video
 ├── AI-Video-Censorship.ipynb          # Jupyter Notebook
+├── sample_video_censored              # Example output video
 └── README.md                          # Documentation
 ```
 
