@@ -67,7 +67,7 @@ ffmpeg -version
 
 This project uses the [**Profanities in English – collection**](https://www.kaggle.com/datasets/konradb/profanities-in-english-collection/versions/1) dataset from Kaggle.
 
-Download and extract the dataset, then place the CSV file in the project directory as `profanity.csv`.  
+Download and extract the dataset, then place the' profanity.csv' file in the project directory.  
 The notebook will automatically normalise and categorise the words into:
 
 - `low_swear_words`
@@ -90,7 +90,7 @@ PAD = 0.15                         # Padding (seconds) before/after each word
 MIN_PROB = 0.8                     # Minimum transcription confidence
 ```
 
-Then run the notebook cell-by-cell or execute all cells to process and censor your video.
+Then run the notebook cell by cell or execute all cells to process and censor your video.
 
 ---
 
@@ -127,4 +127,4 @@ Then run the notebook cell-by-cell or execute all cells to process and censor yo
 ## License
 
 This project is released under the **MIT License**.  
-You are more than welcome to use, modify, and distribute it with proper attribution.
+You are more than welcome to use, modify, and distribute it in the right way.
